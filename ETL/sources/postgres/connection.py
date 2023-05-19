@@ -11,15 +11,8 @@ conn = psycopg2.connect(
 def connection():
     try:
         conn
-        ##cursor = conn.cursor()
-
-        ##cursor.execute('select version()')
-
-        ##data = cursor.fetchone()
-        ##print('connection established')
         return 0
     except:
-        ##print("Error connecting to database")
         return 1
 
 if connection() == 0:
@@ -28,9 +21,4 @@ if connection() == 0:
 else:
     print("Error connecting to database", connection())
 
-
-
-
-
-##connection.conn.close()
 
