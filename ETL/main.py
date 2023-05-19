@@ -1,3 +1,3 @@
-from sources.postgres.loadcust import load
+from sources.postgres.loadcust import main
 
-print(load)
+print(main())
